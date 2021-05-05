@@ -57,3 +57,47 @@ function FormatCurrency(value) {
     }
     return false;
   }
+
+
+
+  var domAridrop = document.getElementById('cart-airdrop');
+  var domPreSale = document.getElementById('cart-sale');
+  var domStaling = document.getElementById('cart-staking');
+  var domBalance = document.getElementById('cart-balance');
+
+  var domButtonAridrop = document.getElementsByClassName('aidrop-c');
+  var domButtonPreSale = document.getElementsByClassName('sale-c');
+  var domButtonStaling = document.getElementsByClassName('staking-c');
+  var domButtonBalance = document.getElementsByClassName('balance-c');
+
+  for (let index = 0; index < domButtonAridrop.length; index++) {
+    const element = domButtonAridrop[index];
+    element.onclick = function() {
+      scrollTo(domAridrop.offsetTop);
+    };
+  }
+
+  for (let index = 0; index < domButtonPreSale.length; index++) {
+    const element = domButtonPreSale[index];
+    element.onclick = function() {
+      scrollTo(domPreSale.offsetTop);
+    };
+  }
+
+  for (let index = 0; index < domButtonStaling.length; index++) {
+    const element = domButtonStaling[index];
+    element.onclick = function() {
+      scrollTo(domStaling.offsetTop);
+    };
+  }
+  for (let index = 0; index < domButtonBalance.length; index++) {
+    const element = domButtonBalance[index];
+    element.onclick = function() {
+      scrollTo(domBalance.offsetTop);
+    };
+  }
+
+  function scrollTo(pos){
+    document.body.scrollTop = pos - 50;
+    document.documentElement.scrollTop = pos- 50;
+  }
