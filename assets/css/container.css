@@ -1,0 +1,216 @@
+/* <------ Container */
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+/* Container ------> */
+
+
+/* <------ Card */
+.card-display
+{
+    background-image: linear-gradient(to right, #232d2d 0%, #483f67 100%);
+    min-width: 49%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgb(83 136 171);
+    box-shadow: 0 0 5px -1px rgb(45 100 115), 0 0 8px -1px rgb(167 236 255) inset;
+}
+.card-display h2 
+{
+    font-weight: bold;
+    color: #e3ff4a;
+}
+
+.card-display a 
+{
+    color: #ff2d71 !important;
+    font-size: 22px;
+    cursor: pointer;
+    vertical-align: text-top;
+}
+.card-display a:hover 
+{
+    color: #f15abf !important;
+}
+.hight-light {
+    font-size: 30px !important;
+    cursor: pointer;
+}
+.hight-light-40 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.card-display p
+{
+    color: #fff;
+    margin-bottom: 0px;
+    font-family: 'lato';
+    font-size: 22px;
+}
+
+.card-display p span
+{
+    color: #35e808;
+}
+.card-display span
+{
+    color: #35e808;
+}
+
+.card-group-button
+{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-button
+{
+    padding: 0;
+    height: 50px;
+    width: 160px;
+    background: #0c902f;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: auto;
+    border: 0;
+    border-color: transparent;
+}
+
+.card-button:hover 
+{
+    border: 3px solid rgb(34, 236, 78);
+    box-shadow: 0 0 15px -1px rgb(105, 240, 92), 
+      0 0 12px -1px rgb(105, 240, 92) inset;
+}
+.input-ygc {
+    text-align: center;
+    width: 300px;
+    background-color: transparent;
+    color: #35e808;
+    border: 1px solid;
+    border: solid;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-radius: 10px;
+    z-index: 1000;
+    padding-right: 70px;
+}
+input:focus{
+    outline: none;
+}
+
+.group-input {
+  margin-top: 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.label-input {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    transition: right 0.2s;
+    font-weight: 600;
+    color: #35e808 !important;
+}
+.card-group-button-50 {
+    width: 50%;
+    margin: 10px auto;
+}
+.card-button-infor {
+    background: #2f9ff4;
+    font-size: 28px;
+    font-weight: 400;
+}
+.card-button-infor:hover{
+    border: 3px solid rgb(89, 156, 233);
+    box-shadow: 0 0 15px -1px rgb(77, 172, 236), 
+      0 0 12px -1px rgb(77, 172, 236) inset;
+}
+.card-button-warning {
+    background: #f42f2f;
+    font-size: 28px;
+    font-weight: 400;
+}
+.card-button-warning:hover{
+    border: 3px solid rgb(247, 77, 77);
+    box-shadow: 0 0 15px -1px rgb(248, 115, 115), 
+      0 0 12px -1px rgb(248, 115, 115) inset;
+}
+.card-group-button-4-buttons {
+    width: 700px;
+    margin: 30px auto 10px auto;
+}
+.card-group-button-2-buttons {
+    width: 350px;
+    margin: 30px auto 10px auto;
+}
+.card-heght-1{
+    height: 345px;
+}
+.card-heght-2{
+    height: 460px;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+.text-color-pink {
+    color: #f15abf !important;
+}
+@media (max-width: 1100px){
+    .card-display{
+        width: 100%;
+    }
+    .card-heght-1{
+        height: auto;
+    }
+    .card-heght-2{
+        height: auto;
+    }
+}
+@media (max-width: 400px){
+    .card-button{
+        font-size: 20px;
+        width: 130px;
+    }
+    .card-group-button {
+        width: 100%;
+    }
+}
+.summary {
+    padding-top: 20px;
+}
+.text-display {
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.balance-remind {
+    margin: auto;
+    font-size: 17px !important;
+    margin-bottom: -10px !important;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 300px;
+    text-align: end;
+}
+/* Card ------>*/

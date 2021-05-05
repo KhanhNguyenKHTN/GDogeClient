@@ -1,0 +1,398 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  html, body {
+    overflow: auto;
+}
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    background-image: linear-gradient(to right, #742e5d 0%, #3c2d4f 100%);
+    /*background-image: linear-gradient(60deg, #3d3393 0%, #2b76b9 37%, #2cacd1 65%, #43b07b 100%);*/ /* color tab menu */
+    height: 80px;
+    width: 100%;
+  }
+ .logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    margin: 0 25px;
+    font-weight: bold;
+  }
+  .nav-menu-ui{
+    float: left;
+  }
+  .nav-menu-ui li{
+    display: inline-block;
+    line-height: 80px;
+  }
+  .nav-menu-ui li a{
+    color: white;
+    font-size: 17px;
+    padding: 15px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a.active{
+    background: #5533a2;
+    transition: .5s;
+  }
+  .nav-menu-ui li a:hover{
+    background: #8c6ed0;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+  .image {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    margin: 0 0 13px 0;
+  }
+  .project-name{
+    height: 80px;
+    cursor: pointer;
+    line-height: 80px;
+    font-family: 'Lucida Handwriting', fantasy;
+    color: #fedd22; /*Project name*/
+    margin-left: 10px;
+    font-size: 40px;
+    user-select: none;
+  }
+  .logo-tab{
+    cursor: pointer;
+    pointer-events: none;
+  }
+  .button-and-tabs {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      'space space space connect connect menu';
+    height: 100%;
+    margin: 20px 0px;
+  }
+  .space-div{
+    grid-area: space;
+  }
+  .btn-connect {
+    grid-area: connect;
+  }
+
+  .btn-tab-menu {
+    grid-area: menu;
+    font-size: 25px;
+    display: none;
+  }
+  .btn-tab-menu a{
+    background: white;
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+
+  .my-button {
+    padding: 0;
+    height: 40px;
+    width: 160px;
+    background: #2f9ff4;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    float: right;
+    margin: 0 15px 0 0;
+    border: 0;
+    border-color: transparent;
+  }
+  .my-button:hover {
+    /* animation: border-flicker 2s linear forwards; */
+    border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 10px 0px rgb(0, 180, 230), 
+      0 0 10px 0px rgb(0, 180, 230) inset;
+  }
+
+  /*  der */
+  .my-header {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      'logo space space space space space space button';
+    height: 100%;
+    margin: 20px 0px;
+  }
+
+  .my-header-logo {
+    grid-area: 'grid-row-start';
+  }
+
+  .my-header-link{
+    grid-area: space;
+    margin: auto 17%;
+  }
+
+  .my-header-button{
+    grid-area: button;
+  }
+  /* end header 1305*/
+  @media (max-width: 1460px){
+    .my-header-link{
+      margin: auto;
+    }
+  }
+  @media (max-width: 1154px){
+    .project-name{
+      font-size: 30px;
+    }
+    .logo{
+      margin: 0 20px;
+    }
+  }
+  @media (max-width: 1070px){
+    .project-name{
+      font-size: 30px;
+    }
+    .my-container {
+      margin: 0 20px;
+    }
+    .button-and-tabs {
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+        'space space space connect connect menu';
+      height: 100%;
+      margin: 20px 0px;
+    }
+    .space-div{
+      grid-area: space;
+    }
+    .btn-connect {
+      grid-area: connect;
+    }
+  
+    .btn-tab-menu {
+      grid-area: menu;
+      font-size: 25px;
+      display: initial;
+    }
+
+    .my-header-link {
+      display: none;
+    }
+
+    .logo{
+      margin: 0 15px;
+    }
+  }
+
+  @media (max-width: 520px){
+    .project-name{
+      font-size: 30px;
+      display: none;
+    }
+    .my-container {
+      margin: 0 10px;
+    }
+    .my-header-link {
+      display: none;
+    }
+
+    .logo{
+      margin: 0 15px;
+    }
+    .button-and-tabs {
+      width: 100%;
+      display: grid;
+      grid-template-areas:
+        'space space space connect connect menu';
+      height: 100%;
+      margin: 20px 0px;
+    }
+    .space-div{
+      grid-area: space;
+    }
+    .btn-connect {
+      grid-area: connect;
+    }
+  
+    .btn-tab-menu {
+      grid-area: menu;
+      font-size: 25px;
+      display: initial;
+    }
+    
+    .my-container {
+      margin: 0 15px !important;
+    }
+  }
+
+  .my-contain {
+    min-height: calc(100vh - 100px);
+    background: #181a1f;
+  }
+  .tab-menu{
+    width: 300px;
+    background: #302e43;
+    float: right;
+    position: fixed;
+    display: block;
+    padding: 10px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    z-index: 99;
+  }
+
+  .tab-menu ul li{
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+  }
+  .tab-menu ul li:hover{
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .tab-menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  @keyframes border-flicker {
+    2% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    5% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    7% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    13% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    22% {
+      border: 1px solid rgb(21, 95, 151);
+      box-shadow: none;
+    }
+    34% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    54% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+    100% {
+      border: 1px solid rgb(0, 180, 230);
+      box-shadow: 0 0 15px -1px rgb(0, 180, 230), 
+      0 0 12px -1px rgb(0, 180, 230) inset;
+    }
+  }
+
+
+  .my-container {
+    margin: 0 30px;
+    padding-bottom: 20px;
+    height: 100%;
+  }
+
+  .margin-20{
+    margin: 20px !important;
+  }
+
+.padding-90{
+    padding-right: 90px!important;
+}
+.margin-top-10{
+    margin-top: 10px !important;
+}
+.margin-top-30 {
+    margin-top: 30px!important;
+}
+.margin-top-20 {
+    margin-top: 20px !important;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1;
+  margin: auto;
+  top: 100px;
+  right: 30px;
+  font-size: 17px;
+}
+#snackbar.show-success {
+  background-color: #21f32d;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+#snackbar.show-error {
+  background-color: #f70c1c;
+  color: #fff;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+#snackbar.show {
+  background-color: #f3c221;
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+
+.Wallet-input{
+  width: 70%;
+  min-width: 500px;
+  background-color: transparent;
+  color: #35e808;
+  border: 1px solid;
+  border: solid;
+  border-right: 0px solid;
+  border-bottom: 1px solid;
+  border-top: 0px solid;
+  border-left: 0px solid;
+  text-align: center;
+}
