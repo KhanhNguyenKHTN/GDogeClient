@@ -224,3 +224,36 @@ h2 strong {
     margin-right: 5px;
   }
 }
+
+@media (max-width: 490px){
+  .countdown .bloc-time {
+    margin-right: 15px;
+  }
+  .countdown .figure {
+    height: 30px;
+    width: 25px;
+  }
+  .countdown .figure > span {
+    font: normal 1.8em/30px "Lato";
+    font-weight: 300;
+  }
+  .countdown {
+    width: 270px;
+  }
+  .wrap {
+    height: 120px;
+  }
+  h1 strong {
+    font-weight: 200;
+  }
+  .countdown .figure {
+    margin-right: 5px;
+  }
+  .countdown .count-title {
+    margin-bottom: 5px;
+    font: normal 0.54em "Lato";
+  }
+  .wrap h1 {
+    margin-bottom: 10px;
+  }
+}

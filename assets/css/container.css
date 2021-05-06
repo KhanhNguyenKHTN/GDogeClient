@@ -193,6 +193,9 @@ input:focus{
     .card-group-button {
         width: 100%;
     }
+    .text-display {
+        font-size: 10px;
+    }
 }
 .summary {
     padding-top: 20px;
